@@ -14,9 +14,6 @@ Compile / compile / scalacOptions ++= Seq(
   "-Xlint:-byname-implicit",
   "-Xlint:-implicit-recursion",
   "-unchecked",
-  "-feature",
-  "-deprecation:true",
-  "-Ymacro-annotations"
 )
 
 lazy val root = (project in file("."))
