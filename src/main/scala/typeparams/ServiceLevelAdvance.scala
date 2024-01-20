@@ -14,6 +14,6 @@ class Elite extends Business
 
 class Platinum extends Business
 
-class ServiceLevelAdvance {
-  def advance: ServiceLevelAdvance = new ServiceLevelAdvance
+class ServiceLevelAdvance[A] {
+  def advance[B <: A]: ServiceLevelAdvance[B] = new ServiceLevelAdvance[B]
 }
